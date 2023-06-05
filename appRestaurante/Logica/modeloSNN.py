@@ -46,5 +46,5 @@ class modeloSNN():
         prediccion = prediccion.flatten()[0]
         dic = {0:'malo' , 1:'bueno', 2:'excelente'}
         if prediccion<3:
-            prediccion='Sentimiento ==> '+ dic[prediccion]
+            prediccion={ "sentimiento": dic[prediccion]}
         return prediccion
